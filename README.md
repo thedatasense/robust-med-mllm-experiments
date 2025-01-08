@@ -6,12 +6,12 @@ This repository contains code and resources related to building and using Large 
 
 The repository is organized as follows:
 
-*   **`/notes`**: This directory likely contains notes, documentation, or experimental code.
+*   **`/notes`**: This directory  contains notes, documentation, or experimental code.
 *   **`App-A-Pytorch-Basic.ipynb`**: A Jupyter Notebook demonstrating basic concepts of LLMs using PyTorch. This is a good starting point for understanding the fundamentals.
 *   **`App-B-Transformer-Basic.ipynb`**: A Jupyter Notebook introducing transformer models, which are the foundation of many modern LLMs.
 *   **`App-C - Building LLM.ipynb`**: A Jupyter Notebook that guides you through the process of building your own LLM. This is likely a more advanced tutorial.
 *   **`LICENSE`**: The license file specifying the terms under which the code is distributed.
-*   **`myDissInPlainText.txt`**: It appears this file contains the text of your dissertation, potentially providing further context or theoretical background for the project.
+*   **`myDissInPlainText.txt`**:  text of a dissertation for basic LLM trainig
 *   **`utilities.py`**: A Python file containing utility functions used across the project.
 
 ## Getting Started
