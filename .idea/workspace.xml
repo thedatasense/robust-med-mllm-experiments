@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ed97d10-590d-4e0f-9ef6-8074e98668f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/App-B-Transformer-Basic.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App-C - Building LLM.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utilities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/llm-healthcare.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/llm-healthcare.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-C - Building LLM.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/App-C - Building LLM.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
