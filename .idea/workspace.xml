@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ed97d10-590d-4e0f-9ef6-8074e98668f8" name="Changes" comment="fixed the llm code">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App-C - Building LLM.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/App-C - Building LLM.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App-D - Llama3 Pretrained.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/App-D - Llama3 Pretrained.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratchnotes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scratchnotes.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +82,8 @@
       <workItem from="1736389835483" duration="38000" />
       <workItem from="1736389975057" duration="609000" />
       <workItem from="1736390701248" duration="8417000" />
-      <workItem from="1736404915390" duration="310000" />
+      <workItem from="1736404915390" duration="2109000" />
+      <workItem from="1736575172007" duration="1518000" />
     </task>
     <task id="LOCAL-00001" summary="fixed the llm code">
       <option name="closed" value="true" />
@@ -94,7 +93,31 @@
       <option name="project" value="LOCAL" />
       <updated>1736402115987</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed the llm code">
+      <option name="closed" value="true" />
+      <created>1736405236168</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736405236168</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fixed the llm code">
+      <option name="closed" value="true" />
+      <created>1736641205935</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736641205935</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fixed the llm code">
+      <option name="closed" value="true" />
+      <created>1736641430559</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1736641430559</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
