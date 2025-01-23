@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ed97d10-590d-4e0f-9ef6-8074e98668f8" name="Changes" comment="fixed the llm code">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App-B-Transformer-Basic.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/App-B-Transformer-Basic.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-C - Building LLM.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/App-C - Building LLM.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,25 +51,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/bineshkumar/Documents/GitHub/llm-healthcare&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;swagger&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/kumarb6/Library/CloudStorage/OneDrive-MedtronicPLC/Documents/GitHub/llm-healthcare",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "swagger",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.220" />
-        <option value="bundled-python-sdk-0fc6c617c4bd-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.220" />
+        <option value="bundled-python-sdk-a8e928d85084-fab4200a9dfa-com.jetbrains.pycharm.ds.sharedIndexes.bundled-DS-243.22562.236" />
       </set>
     </attachedChunks>
   </component>
@@ -86,6 +87,8 @@
       <workItem from="1736404915390" duration="2109000" />
       <workItem from="1736575172007" duration="7282000" />
       <workItem from="1737131445853" duration="9416000" />
+      <workItem from="1737578673520" duration="443000" />
+      <workItem from="1737579151422" duration="1129000" />
     </task>
     <task id="LOCAL-00001" summary="fixed the llm code">
       <option name="closed" value="true" />
