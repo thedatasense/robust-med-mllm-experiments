@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ed97d10-590d-4e0f-9ef6-8074e98668f8" name="Changes" comment="fixed the llm code">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App-B-Transformer-Basic.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/App-B-Transformer-Basic.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-C - Building LLM.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/App-C - Building LLM.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,12 +32,12 @@
     &quot;assignee&quot;: &quot;thedatasense&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/thedatasense/llm-healthcare.git&quot;,
-    &quot;accountId&quot;: &quot;ab08bb3f-5b00-4209-83a7-1df644d19041&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/thedatasense/llm-healthcare.git",
+    "accountId": "9b0bbac1-b41d-44ae-84eb-78ba541899ff"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -54,8 +53,9 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/bineshkumar/Documents/GitHub/llm-healthcare&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kumarb6/Library/CloudStorage/OneDrive-MedtronicPLC/Documents/GitHub/llm-healthcare&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
@@ -67,8 +67,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.220" />
-        <option value="bundled-python-sdk-0fc6c617c4bd-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.220" />
+        <option value="bundled-python-sdk-a8e928d85084-fab4200a9dfa-com.jetbrains.pycharm.ds.sharedIndexes.bundled-DS-243.22562.236" />
       </set>
     </attachedChunks>
   </component>
@@ -85,7 +84,9 @@
       <workItem from="1736390701248" duration="8417000" />
       <workItem from="1736404915390" duration="2109000" />
       <workItem from="1736575172007" duration="7282000" />
-      <workItem from="1737131445853" duration="11889000" />
+      <workItem from="1737131445853" duration="9416000" />
+      <workItem from="1737578673520" duration="443000" />
+      <workItem from="1737579151422" duration="1129000" />
     </task>
     <task id="LOCAL-00001" summary="fixed the llm code">
       <option name="closed" value="true" />
@@ -135,15 +136,7 @@
       <option name="project" value="LOCAL" />
       <updated>1736997664836</updated>
     </task>
-    <task id="LOCAL-00007" summary="fixed the llm code">
-      <option name="closed" value="true" />
-      <created>1737344621988</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1737344621988</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
