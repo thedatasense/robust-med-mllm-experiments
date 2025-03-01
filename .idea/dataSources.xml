@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="onlineDB" uuid="bff5e7a7-b674-4ca6-a322-769241cf3ad5">
+      <driver-ref>cockroach</driver-ref>
+      <synchronize>true</synchronize>
+      <remarks>postgresql://:KWRYMv91lQrfINdMG19sRg@</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://uneven-dingo-4829.jxf.gcp-us-east1.cockroachlabs.cloud:26257/mimic_llm</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>
