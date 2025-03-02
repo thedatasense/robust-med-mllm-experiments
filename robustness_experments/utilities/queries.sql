@@ -10,3 +10,25 @@ where b.uid is null;
 ;
 
 select * from model_response_evaluation_r2 where severity_classification != 'Low Risk' and severity_classification != 'Moderate Risk';
+
+SELECT
+    model_name,
+    strftime('%Y-%m-%d %H:00:00', created_at) as hour,
+    COUNT(DISTINCT uid || question_id ||model_name) as unique_uids
+FROM
+    model_responses_r2
+GROUP BY
+    model_name,
+    strftime('%Y-%m-%d %H:00:00', created_at)
+ORDER BY
+    hour DESC,
+    unique_uids DESC;
+
+
+
+SELECT a.id, a.question_id, a.condition as question_type, a.text as question, a.answer as ground_truth, a.image
+FROM mimic_all_qns a
+          left JOIN model_responses_r2 b
+                   ON CAST(a.question_id AS text) = b.question_id
+                       AND a.id = b.uid
+                       AND b.model_name = 'CheXagent-8b' where b.question_id is null;
