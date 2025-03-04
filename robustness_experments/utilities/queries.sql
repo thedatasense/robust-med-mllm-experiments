@@ -1,8 +1,8 @@
 select question_type,model_id,count(uid) cnt_d from model_response_evaluation_r2
 group by question_type,model_id;
 
-select model_name,count(uid) cnt_d from model_responses_r2
-                                                group by model_name;
+select model_name,question_category,count(uid) cnt_d from model_responses_r2
+                                                group by model_name,question_category;
 
 select a.uid, a.question_id, a.question, a.question_category, a.actual_answer, a.model_name, a.model_answer, a.image_link from model_responses_r2 a
 left join model_response_evaluation_r2 b on a.uid=b.uid and a.question_id=b.uid and a.model_name=b.model_id
@@ -32,3 +32,6 @@ FROM mimic_all_qns a
                    ON CAST(a.question_id AS text) = b.question_id
                        AND a.id = b.uid
                        AND b.model_name = 'CheXagent-8b' where b.question_id is null;
+
+
+                                                   the image, then show the actual answer as ground truth, then model answer, then evaluated by model, then total score and then severity_classification

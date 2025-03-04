@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ed97d10-590d-4e0f-9ef6-8074e98668f8" name="Changes" comment="fixed the llm code">
+      <change afterPath="$PROJECT_DIR$/robustness_experments/analyze_model_performance.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/robustness_experments/explore_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/robustness_experments/MIMIC_Deepseek_Evaluation_C.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/robustness_experments/MIMIC_Deepseek_Evaluation_C.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/robustness_experments/MIMIC_GPT_Evaluation_C.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/robustness_experments/MIMIC_GPT_Evaluation_C.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robustness_experments/MIMIC_GPT_Radiologist.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/robustness_experments/MIMIC_GPT_Radiologist.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/robustness_experments/MIMIC_Gemini_Radiologist.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/robustness_experments/MIMIC_Gemini_Radiologist.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/robustness_experments/utilities/queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/robustness_experments/utilities/queries.sql" afterDir="false" />
     </list>
@@ -23,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
