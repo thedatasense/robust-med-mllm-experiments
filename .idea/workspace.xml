@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ed97d10-590d-4e0f-9ef6-8074e98668f8" name="Changes" comment="fixed the llm code">
-      <change afterPath="$PROJECT_DIR$/robustness_experments/analyze_model_performance.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/robustness_experments/explore_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/robustness_experments/MIMIC_GPT_Radiologist.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/robustness_experments/MIMIC_GPT_Radiologist.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/robustness_experments/MIMIC_Gemini_Radiologist.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/robustness_experments/MIMIC_Gemini_Radiologist.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/robustness_experments/utilities/queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/robustness_experments/utilities/queries.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robustness_experments/analyze_model_performance.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/robustness_experments/analyze_model_performance.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,12 +34,12 @@
     &quot;assignee&quot;: &quot;thedatasense&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/thedatasense/llm-healthcare.git&quot;,
-    &quot;accountId&quot;: &quot;9b0bbac1-b41d-44ae-84eb-78ba541899ff&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/thedatasense/llm-healthcare.git",
+    "accountId": "806c65d1-883e-4640-bf48-a37f926cd069"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
