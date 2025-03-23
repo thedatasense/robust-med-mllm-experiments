@@ -7,6 +7,13 @@ select model_name,question_category,count(uid) cnt_d from model_responses_r2
 select a.uid, a.question_id, a.question, a.question_category, a.actual_answer, a.model_name, a.model_answer, a.image_link from model_responses_r2 a
 left join model_response_evaluation_r2 b on a.uid=b.uid and a.question_id=b.uid and a.model_name=b.model_id
 where b.uid is null;
+
+
+SELECT id,question_id,condition as question_type, text as question,answer as ground_truth,image from mimic_all_qns a
+join model_responses_r2 b  on a.question_id=b.question_id and a.text=b.question and a.condition=b.question_category
+where  b.model_name='google/gemma-3-4b-it'
+
+;
 ;
 
 select * from model_response_evaluation_r2 where severity_classification != 'Low Risk' and severity_classification != 'Moderate Risk';
