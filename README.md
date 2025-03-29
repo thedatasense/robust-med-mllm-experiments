@@ -6,24 +6,14 @@ This repository contains code and resources related to evaluating and using Larg
 
 The repository is organized as follows:
 
-* **`/appendix-notebooks`**: Contains educational notebooks that demonstrate LLM concepts:
-  * `App-A-Pytorch-Basic.ipynb`: Basic concepts of LLMs using PyTorch
-  * `App-B-Transformer-Basic.ipynb`: Introduction to transformer models
-  * `App-C - Building LLM.ipynb`: Guide to building your own LLM
-  * `App-C.1-Instruct.ipynb`: Instructions for fine-tuning models
-  * `App-D - Llama3 Pretrained.ipynb`: Working with Llama 3 models
-  * `App-E - LLM Robustness NL_Augmenter.ipynb`: Testing LLM robustness
-  
-* **`/datasets`**: Sample text datasets for training and evaluation
-* **`/notes`**: Documentation and experimental notes
-* **`/robustness_experments`**: Main experimental notebooks evaluating:
-  * Medical vision-language models (Llama 3, Gemini, GPT-4V) on:
-    * MIMIC-CXR (chest X-rays)
-    * Fundus images (eye examination)
-  * Robustness experiments with various perturbations
-
-* **`/monitor_runs_stats`**: Statistics and logs from model evaluation runs
-* **`monitor_gradio.py`**: Gradio interface for monitoring model performance
+* **`/src/`**: Core source code
+* **`/data/`**: Datasets and metadata
+* **`/models/`**: Model implementations organized by model type (Llama, GPT, Gemini, Gemma)
+* **`/notebooks/`**: Educational notebooks that demonstrate LLM concepts
+* **`/utils/`**: Shared utilities and helper functions
+* **`/tests/`**: Test files and sample data
+* **`/results/`**: Evaluation results and monitoring statistics
+* **`/docs/`**: Documentation and research notes
 
 ## Key Features
 
@@ -46,8 +36,8 @@ The repository is organized as follows:
    ```
 
 3. **Explore the content:**
-   * Start with the appendix notebooks to understand the concepts
-   * Review the robustness experiments for practical evaluations
+   * Start with the notebooks to understand the concepts
+   * Review the model experiments for practical evaluations
    * Use the monitoring tools to track performance metrics
 
 ## License
