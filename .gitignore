@@ -6,7 +6,6 @@ scratchnotes.txt
 *.ckpt
 *.weights
 Llama-3.2-1B-Instruct
-models
 
 robustness_experments/MIMIC_Deepseek_Evaluation_C.ipynb
 robustness_experments/MIMIC_Gemini_Multimodal.ipynb
