@@ -9,5 +9,12 @@
       <jdbc-url>jdbc:postgresql://uneven-dingo-4829.jxf.gcp-us-east1.cockroachlabs.cloud:26257/mimic_llm</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="rob_exp@35.237.106.39" uuid="d24ce1ba-5797-4dc1-8dcf-2290112c152e">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://35.237.106.39:5432/rob_exp</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
