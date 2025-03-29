@@ -1,7 +1,7 @@
 select question_type,model_id,count(uid) cnt_d from model_response_evaluation_r2
 group by question_type,model_id;
 
-select model_name,question_category,count(uid) cnt_d from model_responses_r2
+select model_name,question_category,count(uid) cnt_d from mimicxp.model_responses_r2
                                                 group by model_name,question_category;
 
 select a.uid, a.question_id, a.question, a.question_category, a.actual_answer, a.model_name, a.model_answer, a.image_link from model_responses_r2 a
