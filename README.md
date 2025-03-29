@@ -6,10 +6,21 @@ This repository contains code and resources related to evaluating and using Larg
 
 The repository is organized as follows:
 
-* **`/src/`**: Core source code
-* **`/data/`**: Datasets and metadata
-* **`/models/`**: Model implementations organized by model type (Llama, GPT, Gemini, Gemma)
-* **`/notebooks/`**: Educational notebooks that demonstrate LLM concepts
+* **`/src/`**: Core source code including model runners and processors
+* **`/data/`**: Datasets, image data, and evaluation metadata
+* **`/models/`**: Model implementations organized by model type:
+  * **`/models/llama/`**: Llama 3 model implementations
+  * **`/models/gpt/`**: GPT model implementations
+  * **`/models/gemini/`**: Google Gemini model implementations
+  * **`/models/gemma/`**: Google Gemma model implementations
+  * **`/models/CheXagent/`**: CheXagent model implementations
+* **`/notebooks/`**: Educational notebooks demonstrating LLM concepts:
+  * **`01-PyTorch-Basics.ipynb`**: Basic concepts using PyTorch
+  * **`02-Transformer-Basics.ipynb`**: Introduction to transformer models
+  * **`03-Building-LLM.ipynb`**: Guide to building your own LLM
+  * **`04-Instruction-Tuning.ipynb`**: Instructions for fine-tuning models
+  * **`05-Llama3-Pretrained.ipynb`**: Working with Llama 3 models
+  * **`06-LLM-Robustness.ipynb`**: Testing LLM robustness
 * **`/utils/`**: Shared utilities and helper functions
 * **`/tests/`**: Test files and sample data
 * **`/results/`**: Evaluation results and monitoring statistics
