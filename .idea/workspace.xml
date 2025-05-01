@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ed97d10-590d-4e0f-9ef6-8074e98668f8" name="Changes" comment="fixed the llm code">
-      <change afterPath="$PROJECT_DIR$/models/GPT/gpt-evaluation-surg_vu.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/GPT/gpt-surg_va.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/GPT/gpt_surg_tools_annotate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/GPT/error_log.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/GPT/error_log.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/GPT/gpt-surgical_tools_annotate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/GPT/gpt-surgical_tools_annotate.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/04-Instruction-Tuning.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/04-Instruction-Tuning.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/05-Llama3-Pretrained.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/05-Llama3-Pretrained.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/06-LLM-Robustness.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/06-LLM-Robustness.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +37,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/thedatasense/robust-med-mllm-experiments.git&quot;,
-    &quot;accountId&quot;: &quot;806c65d1-883e-4640-bf48-a37f926cd069&quot;
+    &quot;accountId&quot;: &quot;9b0bbac1-b41d-44ae-84eb-78ba541899ff&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -60,7 +58,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/bineshkumar/Documents/GitHub/llm-healthcare/models/GPT&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/bineshkumar/Documents/GitHub/llm-healthcare/models/CheXagent&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
@@ -77,7 +75,6 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/models/GPT" />
       <recent name="$PROJECT_DIR$/models/CheXagent" />
       <recent name="$PROJECT_DIR$/robustness_experments/utilities" />
       <recent name="$USER_HOME$/Downloads" />
@@ -87,7 +84,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-f2b3473ffc3f-fab4200a9dfa-com.jetbrains.pycharm.ds.sharedIndexes.bundled-DS-243.25659.44" />
+        <option value="bundled-python-sdk-f7cd937e3587-99d813433b97-com.jetbrains.pycharm.ds.sharedIndexes.bundled-DS-251.23774.439" />
       </set>
     </attachedChunks>
   </component>
