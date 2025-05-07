@@ -1,0 +1,219 @@
+#!/usr/bin/env python3
+import os
+import argparse
+import numpy as np
+from PIL import Image, ImageDraw, UnidentifiedImageError
+from stegano import lsb
+
+# 1. Gaussian noise
+def add_gaussian_noise(img: Image.Image, sigma: float) -> Image.Image:
+    arr = np.array(img, dtype=np.float32)
+    noise = np.random.normal(0, sigma, arr.shape)
+    out = np.clip(arr + noise, 0, 255).astype(np.uint8)
+    return Image.fromarray(out)
+
+# 2. Checkerboard patch (with configurable fill)
+def make_checkerboard(patch_size: int, square: int, fill: int = 128) -> Image.Image:
+    # start with transparent patch
+    p = Image.new("L", (patch_size, patch_size), 0)
+    draw = ImageDraw.Draw(p)
+    for y in range(0, patch_size, 2 * square):
+        for x in range(0, patch_size, 2 * square):
+            # draw your “white” squares at mid‐gray level
+            draw.rectangle([x, y, x + square - 1, y + square - 1], fill=fill)
+            draw.rectangle([x + square, y + square, x + 2 * square - 1, y + 2 * square - 1], fill=fill)
+    return p
+
+# 3. Overlay checker patch (single or tiled)
+def overlay_checker(img: Image.Image, patch: Image.Image, tiled: bool) -> Image.Image:
+    out = img.copy()
+    w, h = img.size
+    pw, ph = patch.size
+
+    if tiled:
+        # tile patches every (pw+gap) pixels
+        gap = pw // 4
+        for y in range(0, h, ph + gap):
+            for x in range(0, w, pw + gap):
+                out.paste(patch, (x, y), patch)
+    else:
+        # single random placement
+        x = np.random.randint(0, max(1, w - pw))
+        y = np.random.randint(0, max(1, h - ph))
+        out.paste(patch, (x, y), patch)
+
+    return out
+
+# 4. Random arrow (unchanged)
+def add_random_arrow(img: Image.Image) -> Image.Image:
+    w, h = img.size
+    start = (np.random.randint(w), np.random.randint(h))
+    end   = (np.random.randint(w), np.random.randint(h))
+    out   = img.copy().convert("RGB")
+    d     = ImageDraw.Draw(out)
+    d.line([start, end], width=3, fill=(255,255,255))
+    dx, dy = end[0]-start[0], end[1]-start[1]
+    perp = (-dy, dx)
+    norm = np.hypot(*perp)
+    if norm>0:
+        ux, uy = perp[0]/norm*10, perp[1]/norm*10
+        head = [
+            end,
+            (int(end[0] - 0.2*dx + ux), int(end[1] - 0.2*dy + uy)),
+            (int(end[0] - 0.2*dx - ux), int(end[1] - 0.2*dy - uy))
+        ]
+        d.polygon(head, fill=(255,255,255))
+    return out.convert("L")
+
+# 5. Moiré overlay (with freq & alpha)
+def make_moire_overlay(size, freq: float) -> Image.Image:
+    w, h = size
+    xs = np.linspace(0, 2*np.pi*freq*w, w)
+    ys = np.linspace(0, 2*np.pi*freq*h, h)
+    grid = np.outer(np.sin(xs), np.sin(ys))
+    norm = ((grid+1)/2 * 255).astype(np.uint8)
+    return Image.fromarray(norm)
+
+def overlay_moire(img: Image.Image, freq: float, alpha: float) -> Image.Image:
+    moire = make_moire_overlay(img.size, freq)
+    moire = moire.convert(img.mode).resize(img.size)
+    return Image.blend(img.convert("RGB"), moire.convert("RGB"), alpha).convert(img.mode)
+
+# 6a. Steganography hide
+def steg_hide(img: Image.Image, message: str, out_path: str):
+    rgb    = img.convert("RGB")
+    secret = lsb.hide(rgb, message)
+    secret.save(out_path)
+
+# 6b. Extract and save LSB plane so it’s *visible*
+def extract_lsb_plane(img: Image.Image, out_path: str):
+    arr = np.array(img.convert("L"))
+    lsb_plane = (arr & 1) * 255
+    Image.fromarray(lsb_plane).save(out_path)
+
+# Utility to mirror folder structure
+def create_output_dir(src_dir: str, src_root: str, dst_root: str) -> str:
+    rel_path = os.path.relpath(src_dir, src_root)
+    dst_dir   = os.path.join(dst_root, rel_path)
+    os.makedirs(dst_dir, exist_ok=True)
+    return dst_dir
+
+# Main processing
+def process_folder(args):
+    checker = make_checkerboard(args.patch_size, args.square_size, args.checker_fill)
+    total_dirs = total_files = processed_files = 0
+
+    for dirpath, _, files in os.walk(args.root_folder):
+        jpgs = [f for f in files if f.lower().endswith('.jpg') and not f.startswith('pert_')]
+        total_dirs  += 1
+        total_files += len(jpgs)
+
+        if args.verbose and jpgs:
+            print(f"\nProcessing {len(jpgs)} files in {dirpath}")
+
+        for fn in jpgs:
+            inp = os.path.join(dirpath, fn)
+            try:
+                img = Image.open(inp).convert('L')
+            except UnidentifiedImageError:
+                print(f"⚠️ Skipping invalid: {inp}")
+                continue
+
+            base, ext = os.path.splitext(fn)
+            outdir = create_output_dir(dirpath, args.root_folder, args.output_root)
+
+            # 1. Gaussian
+            add_gaussian_noise(img, args.sigma) \
+                .save(os.path.join(outdir, f"pert_gaussian_{base}{ext}"))
+
+            # 2. Checker
+            overlay_checker(img, checker, args.tile_checker) \
+                .save(os.path.join(outdir, f"pert_checker_{base}{ext}"))
+
+            # 3. Arrow
+            add_random_arrow(img) \
+                .save(os.path.join(outdir, f"pert_arrow_{base}{ext}"))
+
+            # 4. Moiré
+            overlay_moire(img, args.moire_freq, args.moire_alpha) \
+                .save(os.path.join(outdir, f"pert_moire_{base}{ext}"))
+
+            # 5. Stego hide + lsb extract
+            false_path = os.path.join(outdir, f"pert_steg_false_{base}{ext}")
+            steg_hide(img, "FALSE_POSITIVE", false_path)
+
+            if args.extract_lsb:
+                extract_lsb_plane(Image.open(false_path),
+                                  os.path.join(outdir, f"lsb_false_{base}.png"))
+
+            true_path = os.path.join(outdir, f"pert_steg_true_{base}{ext}")
+            steg_hide(img, "TRUE_POSITIVE", true_path)
+            if args.extract_lsb:
+                extract_lsb_plane(Image.open(true_path),
+                                  os.path.join(outdir, f"lsb_true_{base}.png"))
+
+            processed_files += 1
+            if args.verbose:
+                print(f"  • {processed_files}/{total_files}", end='\r')
+
+    print(f"\nDone! Processed {processed_files} files in {total_dirs} dirs.\nOutputs in: {args.output_root}")
+
+
+
+
+def process_image_list(rel_paths: pd.Series,
+                       root_folder: str,
+                       output_root: str,
+                       checker_patch: Image.Image,
+                       args):
+    """
+    rel_paths: e.g. a Series of "p11/p11880923/s58606191/abcd1234.jpg"
+    root_folder:  "/content/drive/.../MIMIC_JPG"
+    output_root:  "/content/drive/.../perturbed_files"
+    checker_patch: pre-built checkerboard Image
+    args: same argparse.Namespace as before
+    """
+    for rel in rel_paths:
+        print(f"Processing {rel}")
+        in_path = os.path.join(root_folder, rel)
+        try:
+            img = Image.open(in_path).convert('L')
+        except (FileNotFoundError, UnidentifiedImageError):
+            print(f"⚠️ Skipping {in_path}")
+            continue
+
+        # build mirror output dir
+        rel_dir, fname = os.path.split(rel)             # e.g. "p11/.../s58606191", "abcd.jpg"
+        out_dir = os.path.join(output_root, rel_dir)
+        os.makedirs(out_dir, exist_ok=True)
+
+        base, ext = os.path.splitext(fname)
+
+        # 1) Gaussian
+        out1 = add_gaussian_noise(img, args.sigma)
+        out1.save(os.path.join(out_dir, f"pert_gaussian_{base}{ext}"))
+
+        # 2) Checker (single or tiled)
+        out2 = overlay_checker(img, checker_patch, args.tile_checker)
+        out2.save(os.path.join(out_dir, f"pert_checker_{base}{ext}"))
+
+        # 3) Arrow
+        out3 = add_random_arrow(img)
+        out3.save(os.path.join(out_dir, f"pert_arrow_{base}{ext}"))
+
+        # 4) Moiré
+        out4 = overlay_moire(img, args.moire_freq, args.moire_alpha)
+        out4.save(os.path.join(out_dir, f"pert_moire_{base}{ext}"))
+
+        # 5) Stego + optional LSB extract
+        false_path = os.path.join(out_dir, f"pert_steg_false_{base}{ext}")
+        steg_hide(img, "FALSE_POSITIVE", false_path)
+        if args.extract_lsb:
+            extract_lsb_plane(Image.open(false_path),
+                              os.path.join(out_dir, f"lsb_false_{base}.png"))
+
+        true_path = os.path.join(out_dir, f"pert_steg_true_{base}{ext}")
+        steg_hide(img, "TRUE_POSITIVE", true_path)
+        if args.extract_lsb:
+            extract_lsb_plane(Image.open(true_path),
+                              os.path.join(out_dir, f"lsb_true_{base}.png"))
