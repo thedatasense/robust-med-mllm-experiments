@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ed97d10-590d-4e0f-9ef6-8074e98668f8" name="Changes" comment="fixed the llm code">
+      <change afterPath="$PROJECT_DIR$/docs/evaluation_rubric_prompt.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/text-prompt-attack-template.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/vision-prompt-attack-methods.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/04-Instruction-Tuning.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/04-Instruction-Tuning.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/05-Llama3-Pretrained.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/05-Llama3-Pretrained.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/06-LLM-Robustness.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/06-LLM-Robustness.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/LLaVA/llava_med_colab_radiologist.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models /LLama/LLama3_Radiologist.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/performance_analysis/model_performance_analyzer-r3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/results/performance_analysis/model_performance_analyzer-r3.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/performance_analysis/model_performance_analyzer.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/Generate_Adversarial_Samples.ipynb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +69,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
