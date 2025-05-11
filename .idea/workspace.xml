@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ed97d10-590d-4e0f-9ef6-8074e98668f8" name="Changes" comment="fixed the llm code">
-      <change afterPath="$PROJECT_DIR$/docs/evaluation_rubric_prompt.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/text-prompt-attack-template.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/vision-prompt-attack-methods.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/analysis/model_performance_analyzer_3.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/scratch_pad.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/LLaVA/llava_med_colab_radiologist.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models /LLama/LLama3_Radiologist.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/performance_analysis/model_performance_analyzer-r3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/results/performance_analysis/model_performance_analyzer-r3.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/performance_analysis/model_performance_analyzer.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/Generate_Adversarial_Samples.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/radiologist/chexagent-xray-base.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/radiologist/chexagent-xray-perturbed.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/analysis/model_performance_analyzer_radiologist.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/results/analysis/model_performance_analyzer_radiologist.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -57,28 +53,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/bineshkumar/Documents/GitHub/llm-healthcare/models/CheXagent&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/bineshkumar/Documents/GitHub/llm-healthcare/models/CheXagent",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;cockroach&quot;,
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "cockroach",
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/models/CheXagent" />
