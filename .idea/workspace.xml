@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ed97d10-590d-4e0f-9ef6-8074e98668f8" name="Changes" comment="fixed the llm code">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/analysis/model_performance_analyzer_final.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/analysis/StanfordAIMI_CheXagent-8b_vulnerability_profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/analysis/StanfordAIMI_CheXagent-8b_vulnerability_profile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/analysis/evaluator_score_agreement.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/analysis/evaluator_score_agreement.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/analysis/evaluator_score_distributions.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/analysis/evaluator_score_distributions.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/analysis/google_gemma-3-4b-it_vulnerability_profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/analysis/google_gemma-3-4b-it_vulnerability_profile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/analysis/meta-llama_Llama-3.2-11B-Vision-Instruct_vulnerability_profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/analysis/meta-llama_Llama-3.2-11B-Vision-Instruct_vulnerability_profile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/analysis/microsoft_llava-med-v1.5-mistral-7b_vulnerability_profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/analysis/microsoft_llava-med-v1.5-mistral-7b_vulnerability_profile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/analysis/model_performance_analyzer_3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/results/analysis/model_performance_analyzer_3.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/analysis/openai_gpt-4o_vulnerability_profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/analysis/openai_gpt-4o_vulnerability_profile.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,12 +56,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/bineshkumar/Documents/GitHub/llm-healthcare/models/CheXagent",
+    "last_opened_file_path": "/Users/kumarb6/Github/robust-med-mllm-experiments/results/analysis",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.intellij.jupyter.py.connections.configurable.JupyterServersConfigurable",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -81,6 +73,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/results/analysis" />
       <recent name="$PROJECT_DIR$/models/CheXagent" />
       <recent name="$PROJECT_DIR$/robustness_experments/utilities" />
       <recent name="$USER_HOME$/Downloads" />
