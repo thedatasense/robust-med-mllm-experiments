@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Attacks/linear-hypothesis-explanation.md",
-                "mode": "preview",
-                "source": false
+                "file": "Attacks/Robustness Notes.md",
+                "mode": "source",
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "linear-hypothesis-explanation"
+              "title": "Robustness Notes"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0c094f948ebf5287",
@@ -170,7 +171,8 @@
   },
   "active": "eb1e0c9b9ccfe014",
   "lastOpenFiles": [
-    "Attacks/Claude notes of VLM Attacks.md",
+    "Attacks/vlm-attacks.md",
+    "Attacks/Robustness Notes.md",
     "Attacks/linear-hypothesis-explanation.md",
     "Attacks/Unconfirmed 213202.crdownload",
     "Attacks/Robust-LLaVA - On the Effectiveness of Large-Scale Robust Image Encoders for Multi-modal Large Language Models.md",
